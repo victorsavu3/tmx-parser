@@ -37,6 +37,7 @@ namespace Tmx
 		, width(0)
 		, height(0)
 		, zOrder(0)
+		, visible(true)
 	{}
 
 	ObjectGroup::~ObjectGroup() 
