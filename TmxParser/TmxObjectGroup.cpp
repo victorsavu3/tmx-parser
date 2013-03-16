@@ -37,6 +37,7 @@ namespace Tmx
 		, width(0)
 		, height(0)
 		, zOrder(0)
+		, opacity(1.0f)
 		, visible(true)
 	{}
 
@@ -59,6 +60,12 @@ namespace Tmx
 		objectGroupElem->Attribute("width", &width);
 		objectGroupElem->Attribute("height", &height);
 		objectGroupElem->Attribute("visible", &visible);
+
+		const char *opacityStr = objectGroupElem->Attribute("opacity");
+		if (opacityStr)
+		{
+			opacity = (float)atof(opacityStr);
+		}
 
 		// Read the properties.
 		const TiXmlNode *propertiesNode = objectGroupNode->FirstChild("properties");

@@ -78,6 +78,9 @@ namespace Tmx
 		// Set the zorder of the ImageLayer.
 		void SetZOrder( int z ) { zOrder = z; }
 
+		// Get the opacity of the layer.
+		float GetOpacity() { return opacity; }
+
 	private:
 		const Tmx::Map *map;
 

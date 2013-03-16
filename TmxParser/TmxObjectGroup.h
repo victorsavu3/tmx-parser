@@ -83,6 +83,9 @@ namespace Tmx
 		// Set the zorder of the object group.
 		void SetZOrder( int z ) { zOrder = z; }
 
+		// Get the opacity of the layer.
+		float GetOpacity() { return opacity; }
+
 	private:
 		std::string name;
 		
@@ -90,6 +93,7 @@ namespace Tmx
 		int height;
 		int visible;
 		int zOrder;
+		float opacity;
 
 		Tmx::PropertySet properties;
 
