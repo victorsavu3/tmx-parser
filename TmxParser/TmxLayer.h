@@ -126,7 +126,7 @@ namespace Tmx
 		void SetZOrder( int z ) { zOrder = z; }
 
 		// Get the opacity of the layer.
-		float GetOpacity() { return opacity; }
+		float GetOpacity() const { return opacity; }
 
 	private:
 		void ParseXML(const TiXmlNode *dataNode);
