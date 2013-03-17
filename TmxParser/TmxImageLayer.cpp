@@ -41,8 +41,8 @@ namespace Tmx
 		, width(0)
 		, height(0)
 		, image(NULL)
-		, opacity(0)
-		, visible(0)
+		, opacity(1.0)
+		, visible(true)
 		, zOrder(0)
 
 	{
